@@ -9,15 +9,21 @@
   <title></title>
 </head>
 <body>
-  <div ping>
+  <div class="ping">
     <p class="moja"><marquee>Lets Play!!</marquee></p>
-  <form id="ping-pong">
-      <p>Enter your number here:</p>
-      <input id="number" type="text">
-    <button type="submit" class="btn">Ping pong!</button>
-  </form>
-  <ul id="output">
-  </ul>
-</div>
-</body>
-</html>
+    <p class="rules">Rules </p>
+    <p>PingPong will count upto your number from 1 with the following exceptions:</p>
+    <ol>
+      <li>Numbers divisible by 3 are replaced with "ping"</li>
+      <li>Numbers divisible by 5 are replaced with "pong"</li>
+      <li>Numbers divisible by 15 are replaced with "pingpong"</li>
+      <form id="ping-pong">
+        <p>Enter your number here:</p>
+        <input id="number" type="text">
+        <button type="submit" class="btn">Ping pong!</button>
+      </form>
+      <ul id="output">
+      </ul>
+    </div>
+  </body>
+  </html>

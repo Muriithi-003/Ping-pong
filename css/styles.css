@@ -1,11 +1,13 @@
 .moja {
   padding: 30px;
   color: white;
-  font-size: 20px;
+  font-size: 40px;
 }
 body {
-  background-image: url("../img/two.jpeg");
-  background-size: cover;
-  background-repeat: no-repeat;
+  background-color: black;
   color: white;
+  font-size: 20px;
+}
+.ping {
+  padding: 30px;
 }
