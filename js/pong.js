@@ -1,32 +1,27 @@
-var x = [];
-
-//UI
-function pingGame(namba){
-  for( var index = 1; index <= namba; index+=1);{
-    if(index % 15 === 0){
-      x.push("pingpong");
-    }
-    else if (index % 5 === 0) {
-      x.push("pong");
-    }
-    else if (index % 3 === 0) {
-      x.push("ping");
-    }
-    else {
-      x.push("index");
-    }
-  }
+//back-end logic
+function pingPong(i){
+	//takes in an interger and integer as an argument and returns the below logical states
+	if (i%15===0){
+		return "pingpong"
+		}
+	else if(i%3===0){
+		return "ping"
+		}
+	else if(i%5===0){
+		return "pong"
+		}
+	else{
+		return i
+		}
 }
-//BS
+
+//user interface
 $(document).ready(function(){
-   $("form#ping-pong").submit(function(){
-      event.preventDefault();
-      var namba = parseInt($("input#namba").val());
-
-      pingGame(namba);
-
-      x.forEach(function(namba){
-         $("#output").append('<li>' + namba + "</li>");
-      });
-   });
-})
+	$("form#ping-pong").submit(function(event){
+		event.preventDefault();
+		var num=parseInt($("input#number").val());
+		for(var i=1; i<=num; i+=1){
+			$("output").append("<li>"+pingPong(i)+"</li>");
+		}
+	});
+});
