@@ -12,8 +12,19 @@ body {
 }
 .jumbotron {
   font-size: 100px;
-  color: black;
+  color: white;
+  background-color: #000019;
 }
 .nne {
   color: white;
+}
+.saba {
+  color: white;
+  padding: 60px;
+}
+a.link {
+  color: white;
+}
+.nane {
+  padding: 60px;
 }
