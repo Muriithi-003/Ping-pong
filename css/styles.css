@@ -5,9 +5,15 @@
 }
 body {
   background-color: black;
-  color: white;
   font-size: 20px;
 }
 .ping {
   padding: 30px;
+}
+.jumbotron {
+  font-size: 100px;
+  color: black;
+}
+.nne {
+  color: white;
 }
