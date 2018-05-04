@@ -1,6 +1,6 @@
 .moja {
   padding: 30px;
-  color: white;
+  color: #00FFFF;
   font-size: 40px;
 }
 body {
@@ -27,4 +27,8 @@ a.link {
 }
 .nane {
   padding: 60px;
+}
+#ping-pong {
+  text-align: center;
+  color: #00FFFF;
 }
