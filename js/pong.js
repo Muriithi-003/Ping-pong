@@ -1,33 +1,33 @@
 //BS logic
 function pingPong(number){
-  var x=[];
-	//takes in an interger and integer as an argument and returns the below logical states
+  var myOutput=[]; // an array to store the output
+  //takes in an interger and integer as an argument and returns the below logical states
 
-  for(var i=1; i<=number; i+=1){
-    if (i%15==0){
-  		x.push("pingpong");
-  		}
-  	else if(i%3==0){
-  		 x.push("ping");
-  		}
-  	else if(i%5==0){
-  		x.push ("pong");
-  		}
-  	else{
-  		x.push(i);
+  for(var myInput=1; myInput<=number; myInput+=1){ //the input the user enters
+    if (myInput%15==0){
+      myOutput.push("pingpong");
+    }
+    else if(myInput%3==0){
+      myOutput.push("ping");
+    }
+    else if(myInput%5==0){
+      myOutput.push ("pong");
+    }
+    else{
+      myOutput.push(myInput);
 
-  		}
+    }
   }
-  return x;
+  return myOutput;// the output
 }
 //user interface
 $(document).ready(function(){
-	$("form#ping-pong").submit(function(event){
+  $("form#ping-pong").submit(function(event){
     $("#output").empty();
-		var number=parseInt($("input#number").val());
-    var x= pingPong(number);
-    x.forEach(function(myOutput){
-			$("#output").append("<li>"+ myOutput +"</li>");
+    var number=parseInt($("input#number").val());
+    var myOutput= pingPong(number);
+    myOutput.forEach(function(myOutput){
+      $("#output").append("<li>"+ myOutput +"</li>");
       event.preventDefault();
     });
   });
